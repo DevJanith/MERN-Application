@@ -1,7 +1,10 @@
 import axios from 'axios';
 
+//local-host URL
 const API = axios.create({
-    baseURL: "http://localhost:5000"
+    //local-host URL
+    // baseURL: "http://localhost:5000"
+    baseURL: "https://mern-stack-project-1.herokuapp.com"
 })
 
 

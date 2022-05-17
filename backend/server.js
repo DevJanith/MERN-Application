@@ -17,6 +17,10 @@ app.use(cors());
 
 app.use('/tutorial', tutorialRoutes);
 
+app.get('/', (req, res) => {
+    res.send("Hello to MERN Application Backend")
+})
+
 const CONNECTION_URL = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.oki5x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const PORT = process.env.PORT || 5000;
 
